@@ -1,0 +1,19 @@
+{
+  "name": "lab-2",
+  "version": "1.0.0",
+  "description": "Copy of Gmail using modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnneSolarte/LAB-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnneSolarte/LAB-2/issues"
+  },
+  "homepage": "https://github.com/AnneSolarte/LAB-2#readme"
+}

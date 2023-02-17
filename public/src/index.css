@@ -1,0 +1,44 @@
+#leftMenu{
+    height: 100%;
+    width: 5%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: blueviolet;
+}
+
+#gmailMenu{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    background-color: brown;
+}
+
+#mainApp{
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    background-color: blue;
+}
+
+#topMenu{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: aquamarine;
+}
+
+#mail{
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    background-color: aqua;
+}
