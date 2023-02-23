@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail</title>
-    <link rel="icon" href="./src/img/logo.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/public/src/img/logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./src/index.css">
 </head>
 <body>
     <section id="leftMenu"></section>
-    <section id="gmailMenu"></section>
+    <section id="gmailMenu">
+        <div class="barInit">
+            <img id="menuIcon" src="/public/src/img/menu.png" alt="">
+            <img id="menuIconGmaifa-pull-left" src="/public/src/img/name.png" alt="">
+        </div>
+        <div>
+            <button id="buttonCompose"><img id="imgButCompose" src="./src/img/pencil.png" alt="">Compose</button>
+        </div>
+    </section>
     <section id="mainApp">
         <section id="topMenu"></section>
         <section id="mail"></section>
     </section>
 </body>
-<link rel="stylesheet" href="./src/index.css">
+
+<script src="/public/src/components/index.js" type="module"></script>
 </html>
