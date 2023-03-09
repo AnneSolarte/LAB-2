@@ -1,13 +1,15 @@
-#leftMenu{
+#leftMenu {
     height: 100%;
     width: 5%;
     position: absolute;
     left: 0%;
     top: 0%;
-    background-color: blueviolet;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    flex-direction: column;
 }
 
-#gmailMenu{
+#gmailMenu {
     height: 100%;
     width: 20%;
     position: absolute;
@@ -16,9 +18,7 @@
     background-color: rgb(18, 18, 18);
 }
 
-
-
-#topMenu{
+#topMenu {
     height: 10%;
     width: 75%;
     position: absolute;
@@ -31,7 +31,7 @@
     align-items: center;
 }
 
-#mail{
+#mail {
     height: 90%;
     width: 75%;
     position: absolute;
@@ -40,11 +40,13 @@
     background-color: aqua;
 }
 
+/*---------------------------------------------------*/
+
 .gmailMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color:aliceblue;
+    color: aliceblue;
     align-items: center;
     background-color: rgb(18, 18, 18);
     padding-left: 5%;
@@ -53,7 +55,6 @@
     padding-bottom: 3%;
     border-radius: 2em;
     margin: 0%;
-
 }
 
 .imgGmailMenu {
@@ -68,17 +69,16 @@
     margin: 0%;
     text-align: left;
 }
+
 .numGmailMenu {
     margin-top: 0%;
     margin-bottom: 0%;
     margin-right: 0%;
     margin-left: 50%;
     text-align: right;
-
-
 }
 
-#buttonCompose{
+#buttonCompose {
     color: rgb(78, 78, 78);
     background-color: aliceblue;
     display: flex;
@@ -91,10 +91,9 @@
     padding-bottom: 5%;
     margin-left: 6%;
     margin-bottom: 4%;
-
 }
 
-#imgButCompose{
+#imgButCompose {
     width: 25%;
     margin-right: 10%;
 }
@@ -103,23 +102,24 @@
     width: 6%;
     margin: 8%;
 }
-.barInit{
+
+.barInit {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.imgGmailBar{
+.imgGmailBar {
     border-radius: 50%;
     width: 55%;
     margin: 0;
-
 }
 
-.gmailBar{
+.gmailBar {
     margin: 0;
 }
-.input{
+
+.input {
     background-color: aliceblue;
     height: 70%;
     width: 60%;
@@ -127,17 +127,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-items:auto;
-    margin-right:  25%;
-
+    justify-items: auto;
+    margin-right: 25%;
 }
-.imgInput{
+
+.imgInput {
     height: 55%;
     margin-right: 2%;
+}
+
+#input {
+    width: 85%;
+    border: none;
+}
+
+/*---------------------------------------------------*/
+
+.gmailLeftMenu {
+    background-color: aqua;
+}
+
+.imgGmailLeftMenu {
 
 }
 
-#input{
-    width: 85%;
-    border: none;
+.nameGmailLeftMenu {
+
 }
