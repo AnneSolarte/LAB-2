@@ -20,7 +20,7 @@ export default [
     {
         sender: "Rectoria - Universidad ICESI",
         subject: "Comunidado de Rectoria",
-        body: "Comunicado del rector Estimadas y estimados estudiantes",
+        body: "Comunicado del rector Estimadas y estimados est...",
         date: "Mar 3"
     },{
         sender: "Google",
@@ -43,7 +43,7 @@ export default [
     {
         sender: "Rectoria - Universidad ICESI",
         subject: "Comunidado de Rectoria",
-        body: "Comunicado del rector Estimadas y estimados estudiantes",
+        body: "Comunicado del rector Estimadas y estimados est...",
         date: "Mar 3"
     },{
         sender: "Google",
@@ -66,7 +66,7 @@ export default [
     {
         sender: "Rectoria - Universidad ICESI",
         subject: "Comunidado de Rectoria",
-        body: "Comunicado del rector Estimadas y estimados estudiantes",
+        body: "Comunicado del rector Estimadas y estimados est...",
         date: "Mar 3"
     },{
         sender: "Google",
@@ -89,7 +89,7 @@ export default [
     {
         sender: "Rectoria - Universidad ICESI",
         subject: "Comunidado de Rectoria",
-        body: "Comunicado del rector Estimadas y estimados estudiantes",
+        body: "Comunicado del rector Estimadas y estimados est...",
         date: "Mar 3"
     },{
         sender: "Google",
@@ -112,7 +112,7 @@ export default [
     {
         sender: "Rectoria - Universidad ICESI",
         subject: "Comunidado de Rectoria",
-        body: "Comunicado del rector Estimadas y estimados estudiantes",
+        body: "Comunicado del rector Estimadas y estimados est...",
         date: "Mar 3"
     },{
         sender: "Google",
