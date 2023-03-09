@@ -1,3 +1,7 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 #leftMenu {
     height: 100%;
     width: 5%;
@@ -5,8 +9,6 @@
     left: 0%;
     top: 0%;
     background-color: rgb(55, 55, 55);
-    display: flex;
-    flex-direction: column;
 }
 
 #gmailMenu {
@@ -37,7 +39,7 @@
     position: absolute;
     left: 25%;
     top: 10%;
-    background-color: aqua;
+    background-color: rgb(55, 55, 55);
 }
 
 /*---------------------------------------------------*/
@@ -144,13 +146,61 @@
 /*---------------------------------------------------*/
 
 .gmailLeftMenu {
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imgGmailLeftMenu {
-
+    width: 25px;
 }
 
 .nameGmailLeftMenu {
+    color: #FFFFFF;
+}
 
+#leftMenuDiv{
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menuImg{
+    margin-bottom: 50%;
+}
+
+/*---------------------------------------------------*/
+
+.mainApp{
+
+}
+
+.senderMainApp{
+
+}
+
+.subjectMainApp{
+
+}
+
+.bodyMainApp{
+
+}
+
+.dateMainApp{
+
+}
+
+.upperMenu{
+    padding: 1%;
+}
+
+.mainAppImg{
+    width: 20px;
+}
+
+#refresh{
+    margin-left: 2%;
+    margin-right: 1%;
 }

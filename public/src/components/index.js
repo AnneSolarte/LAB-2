@@ -5,11 +5,18 @@ import { renderGmailBar } from "./bar/gmailBar.js";
 import gmailBarInfo from "./bar/gmailBarInfo.js";
 import { renderGmailLeftMenu } from "./leftMenu/gmailLeftMenu.js";
 import gmailLeftMenuInfo from "./leftMenu/gmailLeftMenuInfo.js";
+import { renderMainApp } from "./mainApp/mainApp.js";
+import mainAppInfo from "./mainApp/mainAppInfo.js";
 
-const containerLM = document.getElementById("leftMenu");
+const containerLM = document.getElementById("leftMenuDiv");
 gmailLeftMenuInfo.forEach((info) =>
     containerLM.appendChild(renderGmailLeftMenu(info))
 )
+
+const containerMA = document.getElementById("mail");
+mainAppInfo.forEach((info) =>
+    containerMA.appendChild(renderMainApp(info))
+);
 
 const container = document.getElementById("gmailMenu");
 gmailMenuInfo.forEach((info) =>
