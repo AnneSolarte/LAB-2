@@ -1,29 +1,30 @@
-export const renderGmailMenu = ({
-    icon,
-    name,
-    number,
-}) => {
-    const figure = document.createElement("figure");
-    figure.classList.add("gmailMenu");
 
-
-    const img = document.createElement("img");
-    img.classList.add("imgGmailMenu")
-    const h4 = document.createElement("h4");
-    h4.classList.add("nameGmailMenu")
-    const p = document.createElement("p");
-    p.classList.add("numGmailMenu")
-
-    img.src = icon;
-    h4.textContent = name;
-    p.textContent = number;
-
-
-    figure.appendChild(img);
-    figure.appendChild(h4);
-    figure.appendChild(p);
-
-    return figure;
-};
-
+class gmailMenu extends HTMLElement{
+    static get observedAttributes(){
+        return ["icon", "name", "number"];
+    }
+    constructor(){
+        super();
+        this.attachShadow({mode: "open"})
+    }
+    connectedCallback(){
+        this.render();
+    }
+    attributeChangedCallback(propName, oldValue, newValue){
+        this[propName] = newValue;
+        this.render();
+    }
+    render(){
+        this.shadowRoot.innerHTML =  `
+        <link rel="stylesheet" href="./src/components/profile/profile.css">
+        <div class="gmailMenu">
+            <img class="imgGmailMenu" src="${this.icon} ">
+            <h3 class="nameGmailMenu">${this.name}</h3>
+            <p class="numGmailMenu">${this.number}</p>
+        </div>
+        `
+    }
+}
+customElements.define("gmail-menu", gmailMenu);
+export default gmailMenu;
 
