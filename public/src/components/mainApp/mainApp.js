@@ -49,3 +49,6 @@ export const renderMainApp = ({
 
     return figure;
 };
+
+customElements.define("mail", GmailLeftMenu);
+export default GmailLeftMenu;
