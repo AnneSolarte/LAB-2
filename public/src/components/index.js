@@ -1,10 +1,5 @@
 //Este es el directorio de componentes
-import { renderGmailMenu } from "./menu/gmailMenu.js";
-import gmailMenuInfo from "./menu/gmailMenuInfo.js";
-import { renderGmailBar } from "./bar/gmailBar.js";
-import gmailBarInfo from "./bar/gmailBarInfo.js";
-import { renderGmailLeftMenu } from "./leftMenu/gmailLeftMenu.js";
-import gmailLeftMenuInfo from "./leftMenu/gmailLeftMenuInfo.js";
-import { renderMainApp } from "./mainApp/mainApp.js";
-import mainAppInfo from "./mainApp/mainAppInfo.js";
-
+export { default as renderGmailMenu } from "./menu/gmailMenu.js";
+export { default as renderGmailBar } from "./bar/gmailBar.js";
+export { default as renderGmailLeftMenu } from "./leftMenu/gmailLeftMenu.js";
+//export { default as renderMainApp } from "./mainApp/mainApp.js";
