@@ -1,54 +1,43 @@
-export const renderMainApp = ({
-    sender,
-    subject,
-    body,
-    date
-}) => {
-    const figure = document.createElement("figure");
-    figure.classList.add("mainApp");
-    const leftDiv = document.createElement("div")
-    leftDiv.classList.add("leftDiv");
-    const midDiv = document.createElement("div")
-    midDiv.classList.add("midDiv");
-    const rightDiv = document.createElement("div")
-    rightDiv.classList.add("rightDiv");
+class MainApp extends HTMLElement {
+    static get observedAttributes() {
+        return ["sender", "subject", "body", "date"];
+    }
 
-    const checkbox = document.createElement("img");
-    checkbox.classList.add("mailImg");
-    const star = document.createElement("img")
-    star.classList.add("mailImg");
-    const mark = document.createElement("img");
-    mark.classList.add("mailImg");
-    const send = document.createElement("p");
-    send.classList.add("senderMainApp");
-    const sub = document.createElement("p");
-    sub.classList.add("subjectMainApp");
-    const bod = document.createElement("p");
-    bod.classList.add("bodyMainApp");
-    const dat = document.createElement("p");
-    dat.classList.add("dateMainApp");
+    constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+    }
 
-    checkbox.src = "/public/src/img/check_box.png"
-    star.src = "/public/src/img/star_line.png"
-    mark.src = "/public/src/img/send_line.png"
-    send.textContent = sender;
-    sub.textContent = subject;
-    bod.textContent = body;
-    dat.textContent = date;
+    attributeChangedCallback(propName, oldValue, newValue) {
+        this[propName] = newValue;
+        this.render();
+    }
 
-    leftDiv.appendChild(checkbox);
-    leftDiv.appendChild(star);
-    leftDiv.appendChild(mark);
-    leftDiv.appendChild(send);
-    midDiv.appendChild(sub);
-    midDiv.appendChild(bod);
-    rightDiv.appendChild(dat);
-    figure.appendChild(leftDiv);
-    figure.appendChild(midDiv);
-    figure.appendChild(rightDiv);
+    connectedCallback() {
+        this.render();
+    }
 
-    return figure;
-};
+    render() {
+        this.shadowRoot.innerHTML = `
+    <link rel="stylesheet" href="./src/index.css">
+    <section class="mainApp">
+        <div class="leftDiv">
+            <img src="/public/src/img/check_box.png" class="mailImg">
+            <img src="/public/src/img/star_line.png"" class="mailImg">
+            <img src="/public/src/img/send_line.png" class="mailImg">
+            <p class="senderMainApp">${this.sender}</p>
+        </div>
+        <div class="midDiv">
+            <p class="subjectMainApp">${this.subject}</p>
+            <p class="bodyMainApp">${this.body}</p>
+        </div>
+        <div class="rightDiv">
+            <p class="dateMainApp">${this.date}</p>
+        </div>
+    </section>
+    `;
+    }
+}
 
-customElements.define("mail", GmailLeftMenu);
-export default GmailLeftMenu;
+customElements.define("main-app", MainApp);
+export default MainApp;
